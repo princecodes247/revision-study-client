@@ -2,10 +2,17 @@ const Header = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="content has-text-centered">
-          <p>
-            <strong>React</strong> by <a href="">SDSF</a>
-          </p>
+        RevisionStudy
+      </div>
+      <div className="">
+        <div className="dropdown">
+          Tools
+        </div>
+        <div className="dropdown">
+          Tools
+        </div>
+        <div className="profile">
+          P
         </div>
       </div>
     </footer>
