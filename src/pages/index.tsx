@@ -35,11 +35,13 @@ const Home: NextPage = () => {
           {[1, 2, 3, 4, 5].map((i) => (
             <div
               key={i}
-              className="p-12 relative text-xl overflow-hidden flex-1 text-center group bg-gray-100 cursor-pointer hover:bg-gray-300 rounded"
+              className="p-12 relative text-xl overflow-hidden flex-1 text-center group bg-gray-100 cursor-pointer hover:bg-gray-300 rounded-xl"
             >
               Features
-              <div className="absolute top-0 flex items-center justify-center left-0 w-full group-hover:opacity-100 group-hover:translate-y-0 h-full transition-all translate-y-8 opacity-0 bg-red-100">
-                kkk
+              <div className="absolute top-0 flex items-center justify-center left-0 w-full group-hover:opacity-100 duration-200  h-full transition-all opacity-0 bg-red-100">
+                <p className="group-hover:translate-y-0  translate-y-24 transition-transform duration-300">
+                  kkk
+                </p>
               </div>
             </div>
           ))}
