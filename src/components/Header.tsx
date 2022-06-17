@@ -1,21 +1,13 @@
 const Header = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        RevisionStudy
+    <header className="flex items-center justify-between p-6 px-12 border-b border-gray-100">
+      <div className="container">RevisionStudy</div>
+      <div className="flex items-center gap-4">
+        <div className="dropdown">Tools</div>
+        <div className="dropdown">Tools</div>
+        <div className="profile">P</div>
       </div>
-      <div className="">
-        <div className="dropdown">
-          Tools
-        </div>
-        <div className="dropdown">
-          Tools
-        </div>
-        <div className="profile">
-          P
-        </div>
-      </div>
-    </footer>
+    </header>
   );
 };
 
