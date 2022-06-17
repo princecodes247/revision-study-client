@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "~/components/Header";
-import Footer from "~/components/Footer";
+import Header from "~/components/ui/Header";
+import Footer from "~/components/ui/Footer";
+import { Button } from "~/components/ui/Button";
 
 const Home: NextPage = () => {
   return (
@@ -19,23 +20,31 @@ const Home: NextPage = () => {
             <p className="text-xl">
               A simple app to help you revise your vocabulary.
             </p>
-            <button className="my-4 text-white py-3 px-6 rounded bg-blue-600">
-              Get Started!
-            </button>
-            <button className="py-3 px-6 rounded border border-gray-200">
-              Get Started!
-            </button>
+            <div className="my-6 flex flex-col w-3/4  gap-4">
+              <Button variant="primary" className="w-full">
+                Get Started!
+              </Button>
+              <Button variant="primary" outline className="w-full">
+                Explore tests
+              </Button>
+            </div>
           </div>
           <div className="hero_img flex-1">djsosdfo</div>
         </section>
         <section className="flex gap-4 w-full p-4">
           {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i} className="p-12 flex-1 text-center bg-gray-100">
+            <div
+              key={i}
+              className="p-12 relative overflow-hidden flex-1 text-center group bg-gray-100 cursor-pointer hover:bg-gray-300 rounded"
+            >
               Features
+              <div className="absolute top-0 left-0 w-full group-hover:opacity-100 group-hover:translate-y-0 h-full transition-all translate-y-8 opacity-0 bg-red-100">
+                kkk
+              </div>
             </div>
           ))}
         </section>
-        <div className="flex p-8 items-center justify-center">
+        <div className="flex p-8 items-center text-5xl justify-center">
           We are 1% for something
         </div>
       </main>
