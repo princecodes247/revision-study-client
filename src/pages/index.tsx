@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "~/components/ui/Header";
-import Footer from "~/components/ui/Footer";
 import { Button } from "~/components/ui/Button";
+import Footer from "~/components/ui/Footer";
+import Header from "~/components/ui/Header";
 
 const Home: NextPage = () => {
   return (
@@ -35,10 +35,10 @@ const Home: NextPage = () => {
           {[1, 2, 3, 4, 5].map((i) => (
             <div
               key={i}
-              className="p-12 relative overflow-hidden flex-1 text-center group bg-gray-100 cursor-pointer hover:bg-gray-300 rounded"
+              className="p-12 relative text-xl overflow-hidden flex-1 text-center group bg-gray-100 cursor-pointer hover:bg-gray-300 rounded"
             >
               Features
-              <div className="absolute top-0 left-0 w-full group-hover:opacity-100 group-hover:translate-y-0 h-full transition-all translate-y-8 opacity-0 bg-red-100">
+              <div className="absolute top-0 flex items-center justify-center left-0 w-full group-hover:opacity-100 group-hover:translate-y-0 h-full transition-all translate-y-8 opacity-0 bg-red-100">
                 kkk
               </div>
             </div>
